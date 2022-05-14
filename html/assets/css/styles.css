@@ -1,0 +1,94 @@
+@font-face {
+  font-weight: 400;
+  font-family: 'GT Walsheim Pro';
+  font-style: normal;
+  src: url('../fonts/GTWalsheimPro-Regular.woff2') format('woff2');
+  font-display: optional;
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: 'GT Walsheim Pro';
+  font-style: normal;
+  src: url('../fonts/GTWalsheimPro-Medium.woff2') format('woff2');
+  font-display: optional;
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: 'GT Walsheim Pro';
+  font-style: normal;
+  src: url('../fonts/GTWalsheimPro-Bold.woff2') format('woff2');
+  font-display: optional;
+}
+
+:root {
+  --bg: #fff;
+  --text: #000;
+  --textTinted: rgba(0, 0, 0, 0.5);
+  --brand: #e38356;
+  --brandActive: #b3613b;
+  --brandTinted: rgba(227, 131, 86, 0.2);
+  --brandTintedActive: rgba(227, 131, 86, 0.33);
+  --headerBg: rgba(255, 255, 255, 0.6);
+  --border: rgba(0, 0, 0, 0.08);
+  --borderActive: rgba(0, 0, 0, 0.25);
+  --star: #fece02;
+  --fontFamily: 'GT Walsheim Pro', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
+  --boxBg: #f3f3f3;
+  --siteWidth: 83ch;
+  --inputBg: white;
+  --likeButton: rgba(0, 0, 0, 0.05);
+  --likeButtonHover: rgba(0, 0, 0, 0.1);
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --secondary: #caca28;
+  --transparent: rgba(255, 255, 255, 0);
+}
+
+[data-theme='dark'] {
+  --bg: #161515;
+  --text: #fff;
+  --textTinted: rgba(255, 255, 255, 0.5);
+  --headerBg: rgba(22, 21, 21, 0.6);
+  --border: rgba(255, 255, 255, 0.08);
+  --borderActive: rgba(255, 255, 255, 0.25);
+  --boxBg: #1f1e1d;
+  --star: #fef102;
+  --inputBg: #292929;
+  --likeButton: rgba(255, 255, 255, 0.2);
+  --likeButtonHover: rgba(255, 255, 255, 0.3);
+  --secondary: yellow;
+  --transparent: rgba(0, 0, 0, 0);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--fontFamily);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin-top: 0;
+}
+
+body {
+  color: var(--text);
+  background-color: var(--bg);
+}
+
+.toggle-checkbox:checked {
+  right: 0;
+  border: none;
+  background-color: rgb(129 124 214);
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' className='h-10 w-10' fill='%23FFF' viewBox='0 0 24 24' stroke='rgb(129 124 214)' > <path strokeLinecap='round' strokeLinejoin='round' d='M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z' /> </svg>");
+}
+.toggle-checkbox:checked + .toggle-label {
+  background-color: rgb(76 73 188);
+}   
